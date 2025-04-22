@@ -1,1 +1,1 @@
-system.out.print("Bonne vacances !");
+system.out.print("Hello World !");
