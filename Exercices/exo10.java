@@ -33,7 +33,6 @@ public class exo10 {
 
             System.out.println(question); //Affiche la question
             
-
             String userAnswer = sc.nextLine(); // Réponse de l'utilisateur
             
             if (userAnswer.equalsIgnoreCase(answer)) { // Vérifie les réponses et donne les points
@@ -45,10 +44,10 @@ public class exo10 {
 
                 System.out.println("Dommage. La réponse est " + answer + ".");
             }
-            
-            System.out.println("Ton score est " + result + " sur " + quiz.length + "."); // Affiche le résultat final
+             
         }
-        
+
+        System.out.println("Ton score est " + result + " sur " + quiz.length + "."); // Affiche le résultat final
         sc.close(); // Fermeture du scanner
         
     }

@@ -37,6 +37,9 @@ import java.util.Scanner;
         } else if (userAnswer.equalsIgnoreCase(no)) {
             System.out.println("You suck in english !");
 
+        } else {
+
+            System.out.println("This is not an answer !");
         }
 
         sc.close(); // Ferme le scanner
