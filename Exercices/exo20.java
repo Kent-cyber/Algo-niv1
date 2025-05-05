@@ -34,11 +34,43 @@ import java.util.Scanner;
 public class exo20 {
     public static void main(String[] args) {
 
+        final int votant = 150000;
+
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Combien de gens ont voté pour Joseline Inutile ?");
-        sc.nextInt();
+        System.out.println("Combien de gens ont voté pour Joseline Inutile ?"); // Affiche la question demandé
+        double voteJose = sc.nextInt(); // donne le nombre donné par l'utilisateur
 
+        System.out.println("Combien de gens ont voté pour Vincent Escreau ?"); // Affiche la question demandé
+        double voteVince = sc.nextInt(); // donne le nombre donné par l'utilisateur
+
+        double blanc = votant - (voteJose + voteVince); // Calcul le reste en vote blanc
+
+        if (blanc < 0) { // Si le nombre dépasse le nombre des votants
+            System.out.println("Erreur, c'est impossible d'avoir autant"); // Alors cela affiche ce message d'érreur et s'arrête là
+
+        } else {
+            System.out.println("Vous avez " + Math.round(blanc) + " d'abstentions, ils seront compté nul"); // Affiche le vote blanc en arrondissant
+            
+            double resultJose = (voteJose * 100) / (votant - blanc); // Calcul le pourcentage des votes de Joseline
+            double resultVince = (voteVince * 100) / (votant - blanc); // Calcul le pourcentage des votes de Vincent
+
+            System.out.println("Joseline Inutile : " + Math.round(resultJose * 10.0) / 10.0 + "%"); // Affiche le résultat en arrondissant à un nombre après la virgule
+            System.out.println("Vincent Escreau : " + Math.round(resultVince * 10.0) / 10.0 + "%");
+            
+            if (resultJose >= 60) { // Si le pourcentage de votes de Joseline est supérieur ou égale à 60
+                System.out.println("Joseline Inutile est la nouvelle maire de Mulhouse");
+
+            } else if (resultVince >= 60) { // Si le pourcentage de votes de Vincent est supérieur ou égale à 60
+                System.out.println("Vincent Escreau est le nouveau Maire de Mulhouse");
+
+            } else {
+                System.out.println("Il y aura un second tour");
+
+            }
+
+        }
+        
         sc.close();
     }
 }

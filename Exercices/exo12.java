@@ -36,7 +36,7 @@ public class exo12 {
         double reduc = sc.nextDouble(); // la réduction donné en pourcentage par l'utilisateur
         double sum = prix * (1 - reduc / 100);
 
-        System.out.println("Prix final après réduction de " + reduc + " : " + sum);
+        System.out.println("Prix final après réduction de " + Math.round(reduc) + " : " + Math.round(sum*100.0)/100.0);
 
         sc.close();
     }

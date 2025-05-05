@@ -38,26 +38,26 @@ public class exo15 {
     
     public static void Euro_to_other(double amt) {
 
-        System.out.println(amt+" Euro = " + (amt*1.13) + " Dollar");
+        System.out.println(Math.round(amt)+" Euro = " + Math.round((amt*1.13*100.0)) / 100.0 + " Dollar");
         System.out.println();
 
-        System.out.println(amt+" Euro = " + (amt*0.85) + " Livre sterling");
+        System.out.println(Math.round(amt)+" Euro = " + Math.round((amt*0.85*100.0)) / 100.0 + " Livre sterling");
     }
 
     public static void Dollar_to_other(double amt) {
 
-        System.out.println(amt+" Dollar = " + (amt*0.88) + " Euro");
+        System.out.println(Math.round(amt)+" Dollar = " + Math.round((amt*0.88*100.0)) / 100.0 + " Euro");
         System.out.println();
 
-        System.out.println(amt+" Dollar = " + (amt*0.75) + " Livre sterling");
+        System.out.println(Math.round(amt)+" Dollar = " + Math.round((amt*0.75*100.0)) / 100.0 + " Livre sterling");
     }
 
     public static void Sterling_to_other(double amt) {
 
-        System.out.println(amt+" Livre sterling = " + (amt*1.17) + " Euro");
+        System.out.println(Math.round(amt)+" Livre sterling = " + Math.round((amt*1.17*100.0)) / 100.0 + " Euro");
         System.out.println();
 
-        System.out.println(amt+" Livre sterling = " + (amt*1.33) + " Dollar");
+        System.out.println(Math.round(amt)+" Livre sterling = " + Math.round((amt*1.33*100.0)) / 100.0 + " Dollar");
     }
     public static void main(String[] args) {
 

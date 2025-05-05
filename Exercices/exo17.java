@@ -52,13 +52,13 @@ public class exo17 {
 
         switch (choice) {
             case 1:
-                System.out.println("Pour " + distance + " km, vous allez dépenser en moyenne : " + (distance * (5.5 / 100)) * 1.588 + " euros");
+                System.out.println("Pour " + Math.round(distance) + " km, vous allez dépenser en moyenne : " + Math.round((distance * (5.5 / 100)) * 1.588 * 100.0) / 100.0 + " euros");
                 break;
             case 2:
-                System.out.println("Pour " + distance + " km, vous allez dépenser en moyenne : " + (distance * (6.5 / 100)) * 1.700 + " euros");
+                System.out.println("Pour " + Math.round(distance) + " km, vous allez dépenser en moyenne : " + Math.round((distance * (6.5 / 100)) * 1.700 * 100.0) / 100.0 + " euros");
                 break;
             case 3:
-                System.out.println("Pour " + distance + " km, vous allez dépenser en moyenne : " + (distance * (6.5 / 100)) * 1.794 + " euros");
+                System.out.println("Pour " + Math.round(distance) + " km, vous allez dépenser en moyenne : " + Math.round((distance * (6.5 / 100)) * 1.794 * 100.0) / 100.0 + " euros");
                 break;
             default:
                 System.out.println("Ne tapez pas n'importe quoi !");
