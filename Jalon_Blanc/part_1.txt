@@ -1,0 +1,29 @@
+
+Qu’est ce que l’Algorithmie ?
+
+    L'algorithmie est une suite d'instructions permettant de faire une tâche
+
+A quoi sert un langage de programmation ?
+
+    C'est utilisé pour écrire des instructions par un ordinateur pour lui faire des tâches
+
+Pourquoi Java est un bon langage pour débuter ?
+
+    Il a une syntaxe claire et structurée ce qui favorise la logique
+
+Quel est la différence entre une variable et un type ?
+
+    Une variable est un contenant tandis qu'un type est la nature des données
+
+Cochez les propositions VRAI :
+
+    Faux    - L’algorithmie ne permet pas de faire des conditions
+    Vrai    - La concaténation est l’association entre deux chaines de caractères
+    Vrai    - Scanner permet d’insérer des valeurs directement via son clavier
+    Faux    - Alan Turing a inventé l’Algorithmie
+    Faux    - I++ est une décrémentation
+    Vrai    - Il est possible de changer la valeur d’une variable qui a déjà une valeur initiale
+
+Pouvez-vous m’expliquer en algorithmie comment savoir si la somme de deux valeurs sont pairs ou impairs ?
+
+    Il faut utiliser l'opérateur modulo ce qui peut montrer si la somme de deux valeurs sont pairs ou impairs
