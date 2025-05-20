@@ -20,7 +20,7 @@ public class CalculSurface {
         int a = sc.nextInt();
 
         if (a > 360) {
-            System.out.println("Angle impossible");
+            System.out.println("Erreur de système, réessayez");
 
         } else {
             System.out.println("L'aire du secteur circulaire : " + Surface(r, a));

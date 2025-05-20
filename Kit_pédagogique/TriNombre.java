@@ -8,7 +8,7 @@ public class TriNombre {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Veuillez saisir trois nombres :");
+        System.out.println("Veuillez saisir trois nombres et je les classe dans l'ordre croissant :");
         int a = sc.nextInt();
         int b = sc.nextInt();
         int c = sc.nextInt();
