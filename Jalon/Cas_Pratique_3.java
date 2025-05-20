@@ -23,25 +23,10 @@ public class Cas_Pratique_3 {
 
         if (vitesse > 130 || collision == true) {
             System.out.println("Vous n'êtes pas éligibles pour le remplacement de votre voiture");
-            sc.close();
-            return;
 
-        } else {
-
-            if (compteur > 150000 && controle <= 2) {
+        } else if (compteur > 150000 && controle <= 2 || compteur < 150000 && controle <= 5) {
                 System.out.println("Vous êtes bien éligibles pour le remplacement de votre voiture");
-                sc.close();
-                return;
 
-            } else if (compteur < 150000 && controle <= 5) {
-                System.out.println("Vous êtes bien éligibles pour le remplacement de votre voiture");
-                sc.close();
-                return;
-
-            } else {
-                System.out.println("Vous n'êtes pas éligibles pour le remplacement de votre voiture");
-
-            }
         }
 
         sc.close();
